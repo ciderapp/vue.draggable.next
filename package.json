@@ -9,7 +9,6 @@
     "type": "git",
     "url": "https://github.com/SortableJS/Vue.Draggable.git"
   },
-  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve ./example/main.js --open --mode local",
     "build:doc": "vue-cli-service build ./example/main.js --dest docs --mode development",
@@ -32,6 +31,7 @@
     "nested"
   ],
   "dependencies": {
+    "node-gyp": "^9.4.0",
     "sortablejs": "^1.15.0"
   },
   "peerDependencies": {
@@ -96,5 +96,6 @@
     "types/*",
     "src/*"
   ],
-  "module": "dist/vuedraggable.umd.js"
+  "module": "dist/vuedraggable.umd.js",
+  "packageManager": "yarn@3.6.3"
 }
